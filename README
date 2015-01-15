@@ -1,0 +1,25 @@
+# Overview
+
+This charms deploys datasets from the Kaggle Higgs Boson competition, as well as
+sample python code to run in an iPython Notebook.
+
+It will be used for a Data Science bootcamp in Paris, event sponsored by 
+
+  * Canonical, the company behind Ubuntu, offering a complete data science environment deployed with Juju
+  * Microsoft, maker of public cloud MS Azure, offering the cloud infrastructure to run the event
+  
+
+# Usage
+
+    juju deploy ipython-notebook
+    juju deploy ds20150115
+    juju add-relation ipython-notebook ds20150115
+    juju expose ipython-notebook
+
+You can then browse to http://ip-address to use the notebook. Default password is "secret"
+
+# Contact Information
+
+created and maintained by Samuel Cozannet <samnco@gmail.com>
+
+

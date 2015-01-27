@@ -1,4 +1,4 @@
-name: bootcamp-20150115
+name: bootcamp
 summary: Simple charm to deploy data and sample code to iPython Notebooks
 maintainer: Samuel Cozannet <samnco@gmail.com>
 description: |

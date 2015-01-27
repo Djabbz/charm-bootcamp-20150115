@@ -14,24 +14,24 @@ done
 
 cd "${ROOT_HOME}/${FOLDER}"
 
-for file in `ls "*.zip"` 
+for file in `ls *.zip` 
 do 
-    unzip $file 
+    unzip "$file"
 done
 
-for file in `ls "*.tar"` 
+for file in `ls *.tar` 
 do 
-    tar -xf $file
+    tar -xf "$file"
 done
 
-for file in `ls "*.tar.gz"` 
+for file in `ls *.tar.gz` 
 do 
-    tar -xfz $file
+    tar -xfz "$file"
 done
 
-for file in `ls "*.tar.bz2"` 
+for file in `ls *.tar.bz2` 
 do 
-    tar -xjf $file
+    tar -xjf "$file"
 done
 
 

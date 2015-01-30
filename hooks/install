@@ -9,7 +9,7 @@ HOME="`pwd`"
 
 for file in `ls ${HOME}/data/files`
 do 
-    cp "${HOME}/data/files/${file}" ${ROOT_HOME}/${FOLDER}/
+    cp -f "${HOME}/data/files/${file}" ${ROOT_HOME}/${FOLDER}/
 done
 
 cd "${ROOT_HOME}/${FOLDER}"

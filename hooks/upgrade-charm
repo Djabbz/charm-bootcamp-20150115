@@ -5,33 +5,6 @@ HOME="`pwd`"
 
 [ -f ${HOME}/hooks/common.sh ] && . ${HOME}/hooks/common.sh
 
-[ ! -d "${ROOT_HOME}/${FOLDER}" ] && mkdir "${ROOT_HOME}/${FOLDER}"
+[ -d "${ROOT_HOME}/${FOLDER}" ] && rm -rf "${ROOT_HOME}/${FOLDER}/*"
 
-for file in `ls ${HOME}/data/files`
-do 
-    cp "${HOME}/data/files/${file}" ${ROOT_HOME}/${FOLDER}/
-done
-
-cd "${ROOT_HOME}/${FOLDER}"
-
-for file in `ls *.zip` 
-do 
-    unzip "$file"
-done
-
-for file in `ls *.tar` 
-do 
-    tar -xf "$file"
-done
-
-for file in `ls *.tar.gz` 
-do 
-    tar -xfz "$file"
-done
-
-for file in `ls *.tar.bz2` 
-do 
-    tar -xjf "$file"
-done
-
-
+${HOME}/hooks/install
